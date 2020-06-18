@@ -7,14 +7,36 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="bootstrap.min.css">
+	<!-- Include Quill Stylesheet -->
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<h3 class="text-center py-3">Hello World! This is an editor with hidden magic in 'G'.</h3>
+	<div class="container my-3">
+		<div id="toolbar">
+		 	<!-- Default Buttons -->
+		  	<button class="ql-bold"></button>
+		  	<button class="ql-italic"></button>
+		  	<button class="ql-underline"></button>
+
+		  	<!-- Custom Button -->
+		  	<button id="giphy-button" class="mx-3">G</button>
+
+		  	<!-- Default Buttons -->
+		  	<button class="ql-link"></button>
+		  	<button class="ql-image"></button>
+		  	<button class="ql-code-block"></button>
+		</div>
+		<div id="quill-editor">
+		</div>		
+	</div>
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="popper.min.js"></script>
 	<script type="text/javascript" src="bootstrap.min.js"></script>
 	<script type="text/javascript" src="fontawesome.min.js"></script>
+	<!-- Include the Quill Library -->
+	<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

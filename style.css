@@ -1,3 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+
+#quill-editor {
+	height: 450px;
+}
