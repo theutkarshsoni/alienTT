@@ -1,6 +1,9 @@
-var giphyButton = document.querySelector('#giphy-button');
-giphyButton.addEventListener('click', function() {
-    console.log('Success');
+$('#giphy-button').click(function() {
+    $("#giphyModal").modal("toggle");
+});
+
+$('#submit-button').click(function() {
+    console.log($('#search').val());
 });
 
 var quill = new Quill('#quill-editor', {
