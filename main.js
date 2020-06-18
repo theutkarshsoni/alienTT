@@ -7,7 +7,7 @@ var offsetVal = 0;
 $('#submit-button').click(function() {
     offsetVal = 0;
     $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search?api_key=bBIOwAwLL2Hx7XLoIbVbBe3VtHoqjHMz&q="+ $('#search').val() +"&limit=18&offset=" + offsetVal,
+        url: "https://api.giphy.com/v1/gifs/search?api_key=bBIOwAwLL2Hx7XLoIbVbBe3VtHoqjHMz&q="+ $('#search').val() +"&limit=18&offset=" + offsetVal,
         cache: false,
         dataType: "json",
         type: "GET",
@@ -33,7 +33,7 @@ $('#submit-button').click(function() {
 
 $('#more-button').click(function() {
     $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search?api_key=bBIOwAwLL2Hx7XLoIbVbBe3VtHoqjHMz&q="+ $('#search').val() +"&limit=18&offset=" + offsetVal,
+        url: "https://api.giphy.com/v1/gifs/search?api_key=bBIOwAwLL2Hx7XLoIbVbBe3VtHoqjHMz&q="+ $('#search').val() +"&limit=18&offset=" + offsetVal,
         cache: false,
         dataType: "json",
         type: "GET",
